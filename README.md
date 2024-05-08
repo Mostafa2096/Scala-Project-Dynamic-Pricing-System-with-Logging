@@ -35,3 +35,6 @@ The calculated discounts and prices after discount will be inserted into the MyS
 
 ![image](https://github.com/Mostafa2096/Scala-Project-Dynamic-Pricing-System-with-Logging-And-MySQL-Database/assets/106194954/493074cc-b886-46e8-8b3b-01aba423c184)
 
+OR
+
+![image](https://github.com/Mostafa2096/Scala-Project-Dynamic-Pricing-System-with-Logging-And-MySQL-Database/assets/106194954/acdfd0a6-bf5f-4d95-8830-895b8dca467a)
