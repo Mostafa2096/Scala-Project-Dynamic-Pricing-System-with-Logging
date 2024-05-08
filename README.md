@@ -38,3 +38,37 @@ The calculated discounts and prices after discount will be inserted into the MyS
 OR
 
 ![image](https://github.com/Mostafa2096/Scala-Project-Dynamic-Pricing-System-with-Logging-And-MySQL-Database/assets/106194954/acdfd0a6-bf5f-4d95-8830-895b8dca467a)
+
+
+## Qualifying Rules and Calculation
+
+### Less Than 30 Days Remaining for Product Expiry
+- If the product has 29 days remaining until expiry, a 1% discount is applied.
+- If the product has 28 days remaining until expiry, a 2% discount is applied.
+- If the product has 27 days remaining until expiry, a 3% discount is applied.
+- Discounts continue to increase by 1% for each day closer to expiry, up to a maximum of 29% for products with only 1 day remaining until expiry.
+
+### Cheese and Wine Special Discounts
+- Cheese products are eligible for a 10% discount.
+- Wine products are eligible for a 5% discount.
+
+### Special Discount for March 23rd Sales
+- Products sold on March 23rd receive a special discount of 50%.
+
+### Bulk Purchase Discounts
+- If more than 5 units of the same product are purchased:
+  - For 6 to 9 units: a 5% discount is applied.
+  - For 10 to 14 units: a 7% discount is applied.
+  - For 15 or more units: a 10% discount is applied.
+
+### App Sales Special Discount
+- Sales made through the app qualify for a special discount based on the quantity purchased, rounded up to the nearest multiple of 5:
+  - For quantities 1 to 5: a 5% discount is applied.
+  - For quantities 6 to 10: a 10% discount is applied.
+  - For quantities 11 to 15: a 15% discount is applied.
+  - Discounts increase by 5% for each additional multiple of 5 in quantity.
+
+### Visa Card Sales Discount
+- Sales made using Visa cards qualify for a minor discount of 5%.
+
+These rules govern the calculation of discounts for each transaction in the system. The Scala code implements these rules to determine the appropriate discount for each product based on the transaction details.
